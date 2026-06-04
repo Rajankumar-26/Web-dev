@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            background-color: beige;
+            height: 350px;
+            border: 2px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .box{
+            background-color: aquamarine;
+            width: 250px;
+            height: 280px;
+            border: 1px solid brown;
+            margin: 15px;padding: 10px;
+
+            /* box-shadow: 10px 15px red;        normal X upset ke liya  */
+             /* box-shadow: -10px -15px red;       normal Y upset ke liye */
+              /* box-shadow: 10px 15px 5px yellow ;        for blur ke liya  */
+               /* box-shadow: 10px 15px 5px  15px green;     for spread ke liya    */
+/* 
+               for inner  shadow ke liya ---- inset ka use karte hai  */
+                /* box-shadow: inset 10px 15px red;   */
+/* 
+                for multiple shadow ke liya        comma ka use karte hai  */
+                 box-shadow: 10px 15px red, 13px 8px yellow;  
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <img src="Rohit-Sharma.jpg" width="100" height="100"/>
+            <h2> Ro-Hit Sharma</h2>
+            <p>Rohit Sharma is one of India's finest cricketers and a successful captain. <br>
+             He is known for his elegant batting and record-breaking performances in international cricket.
+</p>
+        </div>
+    </div>
+</body>
+</html>

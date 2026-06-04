@@ -1,0 +1,27 @@
+body{
+    background-color: lightblue;
+    font-family: Arial, sans-serif;
+    background-image: url(https://share.google/2oyZZP4cdOMBlp2bJ)
+}
+
+h1{
+    color: darkblue;
+}
+h2{
+    color: red;
+}
+
+h3{
+    color: yellow;
+}
+
+p{
+    color: white;
+}
+
+li{
+    color: white;
+}
+ul{
+    list-style-type: square;
+}

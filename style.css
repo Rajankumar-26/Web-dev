@@ -1,0 +1,11 @@
+ h1
+        {
+            color:blue;
+            background-color: green;
+            display: inline ;
+            border: 2px solid red;
+            height: 50px;
+            width: 50px;
+            padding: 30px;
+            margin: 50px;
+        }
