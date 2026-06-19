@@ -1,0 +1,185 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+.container{
+    display:grid;
+    height:70vh;
+
+    grid-template-columns:160px 1fr 300px;
+    grid-template-rows:30px 1fr;
+
+    grid-template-areas:
+    "navbar navbar navbar"
+    "sidebar main sidebar-right";
+}
+
+/* Navbar */
+
+.navbar{
+    grid-area:navbar;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:0 5px;
+
+    border-bottom:1px solid #ddd;
+    background:white;
+}
+
+.nav-left{
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+
+.menu-icon{
+    font-size:8px;
+}
+
+.medium-logo{
+    font-size:20px;
+    font-family:Georgia, serif;
+}
+
+.search-box{
+    display:flex;
+    align-items:center;
+
+    width:140px;
+    height:10px;
+
+    background:#f2f2f2;
+    border-radius:25px;
+
+    padding: 15px;
+}
+
+.search-box input{
+    border:none;
+    outline:none;
+    background:transparent;
+    width:100%;
+    margin-left:10px;
+}
+
+.nav-right{
+    display:flex;
+    align-items:center;
+    gap:20px;
+}
+
+.app-btn{
+    background:black;
+    color:white;
+    border:none;
+    padding:7px 7px;
+    border-radius:5px;
+}
+
+.profile{
+    width:10px;
+    height:10px;
+
+    border-radius:50%;
+    background:#57707b;
+    color:white;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+/* Sidebar */
+
+.sidebar{
+    grid-area:sidebar;
+    padding:5px;
+    border-right:1px solid #ddd;
+}
+
+.menu ul{
+    menu{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+}
+
+.a{
+    
+    font-size:5px;
+}
+
+/* Main */
+
+.main{
+    grid-area:main;
+    padding:20px;
+}
+
+.tabs{
+    display:flex;
+    gap:10px;
+    margin-bottom:10px;
+}
+
+.active{
+    border-bottom:2px solid black;
+    padding-bottom:5px;
+}
+
+.article{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:10px 0;
+
+    border-bottom:1px solid #ddd;
+}
+
+.article img{
+    width:100px;
+    height:90px;
+    object-fit:cover;
+}
+
+.article-text h2{
+    margin:4px 0;
+}
+
+/* Right Sidebar */
+
+.sidebar-right{
+    grid-area:sidebar-right;
+    padding:3px;
+    border-left:1px solid #ddd;
+}
+
+.pick{
+    margin-bottom:3px;
+}
+
+.pick small{
+    color:gray;
+}
+
+.topics{
+    display:flex;
+    flex-wrap:wrap;
+    gap:3px;
+    margin-top:4px;
+}
+
+.topics span{
+    background:#f2f2f2;
+    padding:2px 2px;
+    border-radius:5px;
+}

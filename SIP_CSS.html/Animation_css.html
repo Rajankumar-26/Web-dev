@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 150px;
+            height: 150px;
+            background-color: red;
+            animation-name:slidefade;
+            animation-duration: 1s;
+            animation-timing-function: ease-in-out;
+            animation-delay: 2s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;      
+        }
+        @keyframes slidefade{
+            /* from{transform:translatex(0px);}
+            to{
+                transform:translatex(200px);
+            } */
+             0%{
+                transform:translatey(0px) scale(1);
+                opacity:1;
+             }
+             50%{
+                transform:translatey(200px) scale(1.5);
+             }
+             100%{
+                transform: translatey(400px) scale(1);
+                opacity: 1;
+             }
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>

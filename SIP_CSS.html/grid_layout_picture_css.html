@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            display: grid;
+            height: 100vh;
+            grid-template-columns: 200px 1fr 200px;
+            grid-template-rows: 60px 1fr 60px;
+            grid-template-areas:
+                "navbar navbar navbar"
+                "sidebar main sidebar-right"
+                "footer footer footer";
+            gap: 10px;
+            color: aliceblue;
+            text-align: center;
+        }
+
+        .sidebar {
+            grid-area: sidebar;
+            background-color: aqua;
+        }
+
+        .navbar {
+            grid-area: navbar;
+            background-color: palevioletred;
+        }
+
+        .main {
+            grid-area: main;
+            background-color: orange;
+        }
+
+        .footer {
+            grid-area: footer;
+            background-color: red;
+        }
+
+        .sidebar-right {
+            grid-area: sidebar-right;
+            background-color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="navbar">NAVBAR</div>
+        <div class="sidebar">SIDEBAR</div>
+        <div class="main">MAIN CONTENT</div>
+        <div class="sidebar-right"> SIDE RIGHT</div>
+        <div class="footer">FOOTER</div>
+    </div>
+</body>
+
+</html>

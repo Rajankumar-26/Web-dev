@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .ball{
+            height:100px;
+            width:100px;
+            background-color: red;
+            border-radius: 50%;
+            animation:ballmove 1s ease  infinite alternate;
+        }
+        @keyframes ballmove{
+            from{transform:translatey(0px);}
+        
+        to{
+         transform:translatey(250px);
+        }
+    }
+    .hero{
+        height:80px;
+        width:400px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: pink;
+        animation: pulse 1s infinite;
+    }
+    @keyframes pulse{
+        0%{transform:scale(1);}
+        50%{transform: scale(1.1);}
+        100%{transform: scale(1);}
+    }
+    .animated-button{
+        display:inline-block;
+        height: 80px;
+        width: 400px;
+        background-color: red;
+        margin-top: 20px;
+    }
+    button:hover{
+        transform: scale(1.1);
+    }
+    .card{
+        height: 120px;
+        width:120px;
+        margin-left: 200px;
+        margin-top: 20px;
+        background-color: aqua;
+        text-align: center;
+        line-height: 120px;
+        animation:rotation 1s infinite;
+    }
+    @keyframes rotation{
+        from{transform: rotate(0deg);}
+        to{transform: rotatey(180deg);}
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <section class="hero">
+        This is a hero section
+    </section>
+    <button class="animated-button">Animated button</button>
+    <div class="card">Flip Card</div>
+    <div class="ball"></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Smart Local Service Finder</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#f4f4f4;
+}
+
+/* Navbar */
+nav{
+    background:white;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 8%;
+    box-shadow:0 2px 10px rgba(255,0,0,0.4);
+}
+
+.logo{
+    font-size:20px;
+    font-weight:bold;
+    color:#2563eb;
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+    gap:25px;
+}
+
+nav ul li a{
+    text-decoration:none;
+    color:black;
+    font-weight:500;
+}
+
+.button{
+    padding:10px 20px;
+    border:none;
+    border-radius:5px;
+    background:#2563eb;
+    color:white;
+    cursor:pointer;
+}
+
+/* Hero Section */
+.hero{
+    /* height:500px;
+    /* background:linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),
+    url('https://images.unsplash.com/photo-1521791136064-7986c2920216?w=1200'); */
+    /* background-size:cover;
+    background-position:center;
+    color:white;
+    display:flex;
+    align-items:center;
+    justify-content:center; */ 
+    /* .hero{ */
+    
+    height: 500px;
+    background:
+    linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)),
+    url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=1200');
+
+    background-size: cover;
+    background-position: center;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.hero-content{
+    text-align:center;
+}
+
+.hero h1{
+    font-size:40px;
+    margin-bottom:15px;
+    color:yellow;
+}
+
+.hero p{
+    font-size:18px;
+    margin-bottom:30px;
+} 
+
+/* Search Box */
+.search-box{
+    background:white;
+    padding:20px;
+    border-radius:10px;
+    display:flex;
+    gap:10px;
+    justify-content:center;
+}
+
+.search-box input,
+.search-box select{
+    padding:12px;
+    width:220px;
+    border:1px solid #ccc;
+    border-radius:5px;
+}
+
+.search-box button{
+    padding:12px 25px;
+    background:#2563eb;
+    color:white;
+    border:none;
+    border-radius:5px;
+}
+
+/* Services */
+.services{
+    padding:60px 8%;
+}
+
+.services h2{
+    text-align:center;
+    margin-bottom:30px;
+}
+
+.service-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+    gap:20px;
+}
+
+.card{
+    background:white;
+    padding:25px;
+    text-align:center;
+    border-radius:10px;
+    box-shadow:0 2px 10px rgba(255,0,0,.3);
+}
+
+.card h3{
+    margin:15px 0;
+}
+
+.card a{
+    text-decoration:none;
+    color:#2563eb;
+    font-weight:bold;
+}
+
+/* How It Works */
+.work{
+    padding:60px 8%;
+    background:white;
+}
+
+.work h2{
+    text-align:center;
+    margin-bottom:30px;
+}
+
+.steps{
+    display:flex;
+    justify-content:space-around;
+    gap:20px;
+}
+
+.step{
+    width:220px;
+    text-align:center;
+}
+
+.circle{
+    width:70px;
+    height:70px;
+    background:#2563eb;
+    color:white;
+    border-radius:50%;
+    margin:auto;
+    line-height:70px;
+    font-size:24px;
+    font-weight:bold;
+}
+.circle:hover{
+    background-color: aqua;
+}
+
+/* Footer */
+footer{
+    background:#111827;
+    color:green;
+    text-align:center;
+    padding:20px;
+}
+</style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav>
+    <div class="logo">Local Service Finder</div>
+
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+
+    <button class="button">Login</button>
+</nav>
+
+<!-- Hero -->
+<section class="hero">
+    <div class="hero-content">
+        <h1 >Find Trusted Local Services</h1>
+        <p>Search nearby plumbers, electricians, carpenters and more.</p>
+
+        <div class="search-box">
+            <select>
+                <option>Select Service</option>
+                <option>Plumber</option>
+                <option>Electrician</option>
+                <option>Carpenter</option>
+                <option>Cleaning</option>
+                <option>Gardener</option>
+            </select>
+
+            <input type="text" placeholder="Enter Location">
+
+            <button>Search</button>
+        </div>
+    </div>
+</section>
+
+<!-- Services -->
+<section class="services">
+    <h2>Popular Services</h2>
+
+    <div class="service-container">
+
+        <div class="card">
+            <h3>🔧 Plumbing</h3>
+            <p>Pipe repair and installation.</p>
+            <a href="#">Book Now</a>
+        </div>
+
+        <div class="card">
+            <h3>⚡ Electrical</h3>
+            <p>Wiring and appliance repair.</p>
+            <a href="#">Book Now</a>
+        </div>
+
+        <div class="card">
+            <h3>🪚 Carpentry</h3>
+            <p>Furniture repair services.</p>
+            <a href="#">Book Now</a>
+        </div>
+
+        <div class="card">
+            <h3>🧹 Cleaning</h3>
+            <p>Home and office cleaning.</p>
+            <a href="#">Book Now</a>
+        </div>
+        <div class="card">
+            <h3>🌱 Gardening</h3>
+            <p>Garden maintenance and plant care.</p>
+            <a href="#">Book Now</a>
+        </div>
+
+    </div>
+</section>
+
+<!-- How It Works -->
+<section class="work">
+    <h2>How It Works</h2>
+
+    <div class="steps">
+
+        <div class="step">
+            <div class="circle">1</div>
+            <h3>Search</h3>
+            <p>Find required service.</p>
+        </div>
+
+        <div class="step">
+            <div class="circle">2</div>
+            <h3>View Providers</h3>
+            <p>See available providers.</p>
+        </div>
+
+        <div class="step">
+            <div class="circle">3</div>
+            <h3>Book</h3>
+            <p>Contact and book service.</p>
+        </div>
+
+        <div class="step">
+            <div class="circle">4</div>
+            <h3>Review</h3>
+            <p>Give feedback.</p>
+        </div>
+
+    </div>
+</section>
+
+<footer>
+    © 2026 Smart Local Service Finder
+</footer>
+
+</body>
+</html>
